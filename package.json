@@ -1,0 +1,46 @@
+{
+  "name": "use-mobile-detect-hook",
+  "version": "1.0.0",
+  "description": "The React hook to detect if the device is mobile or desktop.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test-watch": "jest --watchAll --coverage",
+    "lint": "./node_modules/eslint/bin/eslint.js --ext js,jsx src",
+    "lint-fix": "./node_modules/eslint/bin/eslint.js --ext js,jsx src --fix",
+    "format:check": "prettier --config ./.prettierrc --list-different \"src/**/*{.ts,.js,.json,.css,.scss}\"",
+    "format:fix": "pretty-quick --staged"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-compat": "^2.6.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "1.1.2",
+    "jest": "^23.6.0",
+    "prettier": "1.14.3",
+    "pretty-quick": "^1.8.0",
+    "react": "^16.7.0-alpha.0"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "keywords": [
+    "React",
+    "hook",
+    "javascript",
+    "mobile",
+    "detect",
+    "device",
+    "type"
+  ],
+  "author": "haldarmahesh",
+  "license": "MIT"
+}
