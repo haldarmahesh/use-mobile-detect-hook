@@ -33,6 +33,6 @@ function MyComponent  = (props) => {
 
 # Contributing
 
-If you have any new suggestions, new features, bug fixes, etc. please contribute by raising pull request on the [https://github.com/haldarmahesh/use-mobile-detect-hook](repository).
+If you have any new suggestions, new features, bug fixes, etc. please contribute by raising pull request on the [repository](https://github.com/haldarmahesh/use-mobile-detect-hook).
 
-If you have any issue with the `use-mobile-detect-hook`, open an issue on [https://github.com/haldarmahesh/use-mobile-detect-hook](Github).
+If you have any issue with the `use-mobile-detect-hook`, open an issue on [Github](https://github.com/haldarmahesh/use-mobile-detect-hook).
