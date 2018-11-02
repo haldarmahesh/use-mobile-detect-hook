@@ -14,6 +14,9 @@
   "peerDependencies": {
     "react": "^16.7.0-alpha.0"
   },
+  "files": [
+    "src/index.js"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "npm run test && npm run format:fix && npm run lint"
