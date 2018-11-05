@@ -12,6 +12,10 @@ npm install use-mobile-detect-hook
 yarn add use-mobile-detect-hook
 ```
 
+# Demo
+
+Follow this link to check the demo.
+
 # Usage
 
 ```javascript
