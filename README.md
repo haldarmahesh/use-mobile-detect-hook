@@ -14,7 +14,7 @@ yarn add use-mobile-detect-hook
 
 # Demo
 
-Follow (this link)[http://www.maheshhaldar.com/demo-use-mobile-detect-hook/] to check the demo.
+Follow [this link](http://www.maheshhaldar.com/demo-use-mobile-detect-hook/) to check the demo.
 
 # Usage
 
