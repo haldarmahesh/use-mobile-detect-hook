@@ -5,19 +5,22 @@ const getMobileDetect = userAgent => {
   const isIos = () => Boolean(userAgent.match(/iPhone|iPad|iPod/i));
   const isOpera = () => Boolean(userAgent.match(/Opera Mini/i));
   const isWindows = () => Boolean(userAgent.match(/IEMobile/i));
+  const isSSR = () => Boolean(userAgent.match(/SSR/i));
 
   const isMobile = () => Boolean(isAndroid() || isIos() || isOpera() || isWindows());
-  const isDesktop = () => !isMobile();
+  const isDesktop = () => Boolean(!isMobile() && !isSSR());
   return {
     isMobile,
     isDesktop,
     isAndroid,
-    isIos
+    isIos,
+    isSSR
   };
 };
 const useMobileDetect = () => {
   useEffect(() => {}, []);
-  return getMobileDetect(navigator.userAgent);
+  const userAgent = typeof navigator === 'undefined' ? 'SSR' : navigator.userAgent;
+  return getMobileDetect(userAgent);
 };
 
 module.exports = useMobileDetect;

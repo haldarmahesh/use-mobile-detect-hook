@@ -25,6 +25,8 @@ describe('useMobileDetect', () => {
     expect(typeof detect.isAndroid()).toEqual('boolean');
     expect(typeof detect.isIos).toEqual('function');
     expect(typeof detect.isIos()).toEqual('boolean');
+    expect(typeof detect.isSSR).toEqual('function');
+    expect(typeof detect.isSSR()).toEqual('boolean');
   });
 });
 
@@ -72,5 +74,10 @@ describe('getMobileDetect', () => {
     expect(useMobileDetect().isAndroid()).toEqual(false);
     expect(useMobileDetect().isIos()).toEqual(false);
     expect(useMobileDetect().isDesktop()).toEqual(true);
+  });
+
+  test('should return isSSR true when valid user agent is SSR', () => {
+    setUserAgent('SSR');
+    expect(useMobileDetect().isSSR()).toEqual(true);
   });
 });
