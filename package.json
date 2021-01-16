@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "The React hook to detect if the device is mobile or desktop.",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "test": "jest --coverage",
     "test-watch": "jest --watchAll --coverage",
