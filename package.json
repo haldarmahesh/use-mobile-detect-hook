@@ -17,7 +17,8 @@
     "react": "^16.7.0-alpha.0"
   },
   "files": [
-    "src/index.js"
+    "src/index.js",
+    "src/index.d.ts"
   ],
   "husky": {
     "hooks": {
