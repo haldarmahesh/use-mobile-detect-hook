@@ -15,3 +15,4 @@ declare const useMobileDetect: () => {
   isIos: () => boolean;
   isSSR: () => boolean;
 };
+
