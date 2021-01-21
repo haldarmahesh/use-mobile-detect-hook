@@ -1,10 +1,18 @@
-declare module 'use-mobile-detect-hook' {
-    interface Device {
-      isMobile(): boolean;
-      isDesktop(): boolean;
-      isAndroid(): boolean;
-      isIos(): boolean;
-      isSSR(): boolean;
-    }
-    export default function useMobileDetect(): Device;
-}
+declare const useEffect: any;
+declare const getMobileDetect: (
+  userAgent: string
+) => {
+  isMobile: () => boolean;
+  isDesktop: () => boolean;
+  isAndroid: () => boolean;
+  isIos: () => boolean;
+  isSSR: () => boolean;
+};
+declare const useMobileDetect: () => {
+  isMobile: () => boolean;
+  isDesktop: () => boolean;
+  isAndroid: () => boolean;
+  isIos: () => boolean;
+  isSSR: () => boolean;
+};
+
