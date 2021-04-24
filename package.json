@@ -2,8 +2,8 @@
   "name": "use-mobile-detect-hook",
   "version": "1.0.3",
   "description": "The React hook to detect if the device is mobile or desktop.",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "test": "npm run build && jest --coverage",
     "test-watch": "npm run build && jest --watchAll --coverage",
@@ -17,8 +17,8 @@
     "react": "^16.7.0-alpha.0"
   },
   "files": [
-    "src/index.js",
-    "src/index.d.ts"
+    "build/index.js",
+    "build/index.d.ts"
   ],
   "husky": {
     "hooks": {
@@ -57,5 +57,6 @@
     "type"
   ],
   "author": "haldarmahesh",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
