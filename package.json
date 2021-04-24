@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "test": "jest --coverage",
-    "test-watch": "jest --watchAll --coverage",
+    "test": "npm run build && jest --coverage",
+    "test-watch": "npm run build && jest --watchAll --coverage",
     "lint": "./node_modules/eslint/bin/eslint.js --ext js,jsx src",
     "lint-fix": "./node_modules/eslint/bin/eslint.js --ext js,jsx src --fix",
     "format:check": "prettier --config ./.prettierrc --list-different \"src/**/*{.ts,.js,.json,.css,.scss}\"",

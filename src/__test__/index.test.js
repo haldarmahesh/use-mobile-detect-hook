@@ -3,7 +3,7 @@ jest.mock('react', () => ({
 }));
 
 const { useEffect } = require('react');
-const useMobileDetect = require('../index');
+const useMobileDetect = require('../../build/index');
 
 const setUserAgent = userAgent => {
   Object.defineProperty(navigator, 'userAgent', {
