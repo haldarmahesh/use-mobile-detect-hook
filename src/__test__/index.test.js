@@ -14,7 +14,7 @@ const setUserAgent = userAgent => {
 describe('useMobileDetect', () => {
   test('should call useEffect and callback', () => {
     useMobileDetect();
-    expect(useEffect).toHaveBeenCalled();
+    expect(useEffect).not.toHaveBeenCalled();
   });
   test('should return an object of functions and vals', () => {
     const detect = useMobileDetect();
