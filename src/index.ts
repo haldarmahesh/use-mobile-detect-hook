@@ -18,7 +18,6 @@ const getMobileDetect = (userAgent: string) => {
   };
 };
 const useMobileDetect = () => {
-  useEffect(() => {}, []);
   const userAgent = typeof navigator === 'undefined' ? 'SSR' : navigator.userAgent;
   return getMobileDetect(userAgent);
 };

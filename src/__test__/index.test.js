@@ -3,7 +3,7 @@ jest.mock('react', () => ({
 }));
 
 const { useEffect } = require('react');
-const useMobileDetect = require('../index');
+const useMobileDetect = require('../../build/index');
 
 const setUserAgent = userAgent => {
   Object.defineProperty(navigator, 'userAgent', {
@@ -14,7 +14,7 @@ const setUserAgent = userAgent => {
 describe('useMobileDetect', () => {
   test('should call useEffect and callback', () => {
     useMobileDetect();
-    expect(useEffect).toHaveBeenCalled();
+    expect(useEffect).not.toHaveBeenCalled();
   });
   test('should return an object of functions and vals', () => {
     const detect = useMobileDetect();
