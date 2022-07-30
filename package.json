@@ -1,6 +1,6 @@
 {
   "name": "use-mobile-detect-hook",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "The React hook to detect if the device is mobile or desktop.",
   "repository": {
     "type": "git",
