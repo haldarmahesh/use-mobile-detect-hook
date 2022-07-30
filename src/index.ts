@@ -5,8 +5,8 @@ function detect(userAgent: string) {
   const isWindows = Boolean(userAgent.match(/IEMobile/i));
   const isSSR = Boolean(userAgent.match(/SSR/i));
 
-  const isMobile = Boolean(isAndroid || isIos || isOpera || isWindows);
-  const isDesktop = Boolean(!isMobile && !isSSR);
+  const isMobile = isAndroid || isIos || isOpera || isWindows;
+  const isDesktop = !isMobile && !isSSR;
   return {
     isAndroid,
     isIos,
